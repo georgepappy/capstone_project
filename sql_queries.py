@@ -32,7 +32,7 @@ users_table_create = ("""
 time_table_create = ("""
                      CREATE TABLE IF NOT EXISTS dim_time (
                      action_time timestamp PRIMARY KEY,
-                     hour int, 
+                     hour int NOT NULL, 
                      day int NOT NULL, 
                      week int NOT NULL, 
                      month int NOT NULL, 
